@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photobay</title>
+   <link rel="stylesheet" href="styleimage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<style type="text/css">
+  .middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.input{
+  width: 60px;
+  height: 60px;
+  background: none;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-sizing: border-box;
+  outline: none;
+  transition: width 0.4s ease-in-out,
+              border-radius 0.8s ease-in-out,
+              padding 0.2s;
+  transition-delay: 0.4s;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top:-350px;
+  right: -300px;
+}
+.inclicked{
+  width: 360px;
+  border-radius: 0;
+  padding: 0 15px;
+  padding-right: 40px;
+
+}
+.btn{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+ top:-350px;
+  right: -300px;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn::before{
+  content: "";
+  width: 4px;
+  height: 25px;
+  background: white;
+  position: absolute;
+  transform: rotate(-45deg);
+  bottom: -16px;
+  right: -6px;
+  transition: 0.3s;
+}
+.close::before,.close::after{
+  content: "";
+  width: 4px;
+  height: 34px;
+  background: white;
+  position: absolute;
+  bottom: 12px;
+  right: 28px;
+}
+.close::before{
+    transform: rotate(-45deg);
+}
+.close::after{
+    transform: rotate(45deg);
+}
+
+
+body{
+  background:url("https://images.pexels.com/photos/1157390/pexels-photo-1157390.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+background-size: cover;
+  background-repeat: no-repeat;
+}
+
+</style>
+<body>
+
+
+
+	<script type="text/javascript">
+		
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left'
+    });
+  });
+      
+	</script>
+	<! FAB >
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating red pulse"><i class="material-icons">insert_chart</i></a></li>
+    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+  </ul>
+</div>
+
+<!FAb end >
+<div class="w3-content container w3-padding-64" id="portfolio">
+
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- searchbox-->
+
+<div class="middle">
+  <form class="search-box" action="index.html" method="post">
+    <input type="text" class="input" name="" value="">
+    <button type="button" class="btn" name="button"></button>
+  </form>
+</div>
+
+<script type="text/javascript">
+  $(".btn").on("click",function() {
+    $(".input").toggleClass("inclicked");
+    $(".btn").toggleClass("close");
+  });
+</script>
+
+
+
+
+  <!-- PORTFOLIO-->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="C:\Users\vijay\Desktop\ip mini\mountain.jpg" style="width:100%"   alt="The mist over the mountains">
+     
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\vijay\Desktop\ip mini\coffee.jpg" style="width:100%"   alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\vijay\Desktop\ip mini\bear.jpg" style="width:100%"   alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\vijay\Desktop\ip mini\beach.jpg" style="width:100%"   alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="C:\Users\vijay\Desktop\ip mini\fog.jpg" style="width:100%"   alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\vijay\Desktop\ip mini\type.jpg" style="width:100%"   alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\vijay\Desktop\ip mini\train.jpg" style="width:100%"   alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="C:\Users\vijay\Desktop\ip mini\sail.jpg" style="width:100%"   alt="Sailing">
+    </div>
+    <form action="upload.html">
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" type="submit" >LOAD MORE</button>
+    </form>
+  </div>
+</div>
+
+<script>
+	function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+</body>
+</html>

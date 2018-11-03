@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<style type="text/css">
+ 
+ .container{
+  background-color: white;
+  opacity: 0.9;
+  position: absolute;
+  top: 300px;
+  left:500px;
+  border: 1px solid white;
+  border-radius: 5px; 
+  width:600px; 
+ }
+ body {
+  background:url("https://images.pexels.com/photos/559768/pexels-photo-559768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size:cover; 
+ }
+    .image-container {
+  background-image: url("https://images.pexels.com/photos/559768/pexels-photo-559768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); /* The image used - important! */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  position: absolute;
+  height:100%;
+  width: 100%;
+}
+
+.text {
+  border: 1px solid beige;
+  border-radius: 5px;
+  position: relative;
+  top: 650px;
+  background-color: black;
+  color: white;
+  font-size: 80px; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 5px;
+  width: 500px;
+  z-index: 9999;
+  text-align: center; /* Center text */
+   /* Position text in the middle */
+  mix-blend-mode: multiply; /* This makes the cutout text possible */
+}
+.avatar{
+  border: 1px solid white;
+  border-radius: 50% 50% ;
+}
+</style>
+<body>
+ <h2>Login Form</h2>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="C:\Users\vijay\Desktop\ip mini\avatar.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+  
+</body>
+</html>

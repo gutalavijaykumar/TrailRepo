@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<style type="text/css">
+ 
+ .container{
+
+  background-color: white;
+  opacity: 0.9;
+  position: relative;
+ top: 300px;
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 1px solid white;
+  border-radius: 5px; 
+  max-width:600px; 
+ }
+ body {
+  background:url("https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size:cover; 
+ }
+    .image-container {
+  background-image: url("https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); /* The image used - important! */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  position: absolute;
+  height:100%;
+  width: 100%;
+}
+
+.text {
+  border: 1px solid beige;
+  border-radius: 5px;
+  position: relative;
+  top: 50px;
+  background-color: white;
+  color: black;
+  font-size: 80px; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 5px;
+  width: 500px;
+  z-index: 9999;
+  text-align: center; /* Center text */
+   /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+.btn{
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border:0px;
+  border-radius: 100% ;
+}
+
+.send{
+  font-size: 25px;
+  color: black;
+
+}
+.but{
+  position: relative;
+  top: 270px;
+  left:950px;
+}
+</style>
+<body>
+  <div class="image-container">
+  <h1 class="text">PH<i class="material-icons prefix medium">camera</i>TO/BAY</h1>
+</div>
+  
+    <div class="container">
+  
+
+  
+    <form class="col s6" action="verify.php" method="post">
+       
+        <div class="input-field ">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" name="uname" class="validate">
+          <label for="uname">username</label>
+        </div>
+
+          
+          <div class="input-field " id="pass">
+          <i class="material-icons prefix">keyboard</i>
+            <input id="password" type="password" name="psw" class="validate">
+            <label for="psw">password</label>
+          </div>
+        
+
+        <div class="input-field " id="phone">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+
+         <div class="input-field " id="email">
+          <i class=" material-icons prefix">email</i>
+            <input id="email_inline" type="email" name="Email" class="validate">
+            <label for="Email">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right">
+              Status
+            </span>
+          </div>
+
+          
+      
+    
+  </div>
+  <div class="but" >
+          
+            <a class="btn"  href="index.html">
+          <i class="large material-icons ">send</i>
+          
+      </a>
+          </div>
+  
+    </form>
+</body>
+</html>
